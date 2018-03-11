@@ -12,6 +12,7 @@ const Component = function(props){
 	return (
 		<div style={style}>
 		<h1>{props.greeting}</h1>
+		<p>{props.greeting}</p>
 	</div>
 	);
 };
@@ -19,6 +20,9 @@ const Component = function(props){
 
 
 ReactDOM.render(
-	<Component greeting="Hello there" color="green"/>,
+	<div>
+	<Component greeting="Hello there" color="green"/>
+	<Component greeting="Hello there" color="blue"/>
+</div>,
 	document.getElementById('root')
 );
