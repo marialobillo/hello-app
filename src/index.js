@@ -1,28 +1,35 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
+var createClass = require('create-react-class');
 
-//var App = <h1>Hello React.js</h1>;
-
-
-
-const Component = function(props){
-	var style = {
-		color: props.color
-	};
-	return (
-		<div style={style}>
-		<h1>{props.greeting}</h1>
-		<p>{props.greeting}</p>
-	</div>
-	);
-};
-
+var Component = createClass({
+	getInitialState: function() {
+		return {
+			color: 'blue'
+		};
+	},
+	handleButtonClick: function() {
+		this.setState(function(prevState) {
+			return {
+				color: (prevState.color === 'blue') ? 'green' : 'blue'
+			};
+		});
+	},
+	render: function() {
+		console.log('Inside render: ', this.state.color);
+		return (
+			<div>
+				<div style={{ color: this.state.color }}>
+					<h1>{this.props.greeting}</h1>
+				</div>
+				<button onClick={this.handleButtonClick}>ClickMe</button>
+			</div>
+		);
+	}
+});
 
 
 ReactDOM.render(
-	<div>
-	<Component greeting="Hello there" color="green"/>
-	<Component greeting="Hello there" color="blue"/>
-</div>,
+	<Component greeting="Hello World"/>,
 	document.getElementById('root')
 );
