@@ -8,13 +8,19 @@
 	{
 		"title": "Game of Thrones",
 		"plot": "Nine noble families fight for control over the mythical lands of Westeros. Meanwhile, a forgotten race hell-bent on destruction returns after being dormant for thousands of years.",
-		"poster": "https://cdn.cloudpix.co/images/game-of-thrones/game-of-thrones-poster-eb4051280faa7b786d82613fc4909011-large-404463.jpg",
+		"poster": "http://digitalspyuk.cdnds.net/17/33/980x490/landscape-1502909283-got3.jpg",
 		"imdbRating": "9.5"
 	},
 	{
 		"title": "Sherlock",
 		"plot": "A modern update finds the famous sleuth and his doctor partner solving crime in 21st century London.",
-		"poster": "http://www.gbposters.com/media/catalog/product/cache/1/small_image/293x440/9df78eab33525d08d6e5fb8d27136e95/s/h/sherlock-bride-portrait-maxi-poster-1.16.jpg",
+		"poster": "https://ichef.bbci.co.uk/images/ic/1008x567/p04pxlg4.jpg",
 		"imdbRating": "9.2"
+	},
+	{
+		"title": "Blue Bloods",
+		"plot": "Revolves around a family of New York cops",
+		"poster": "https://www.celebdirtylaundry.com/wp-content/uploads/blue-bloods-Excessive-Force-season-5-episode-4.jpg",
+		"imdbRating": "7.5"
 	}
 ]
