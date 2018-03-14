@@ -5,6 +5,6 @@ var shows = require('./shows');
 
 
 ReactDOM.render(
-<Show shows={shows} showIndex={1}/>,
+<Show shows={shows} />,
 	document.getElementById('root')
 );
